@@ -15,7 +15,7 @@ function App(): JSX.Element {
   };
 
   const handleDeleteFirstTag = (): void => {
-    setTags(prevTags => prevTags.slice(1));
+    setTags(prevTags => prevTags.slice(1).filter(tag => tag !== ''));
   };
 
   return (
