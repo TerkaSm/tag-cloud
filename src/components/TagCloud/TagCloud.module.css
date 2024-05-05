@@ -1,0 +1,18 @@
+.container {
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 50px;
+  background-color: #edf0f5;
+  padding: 50px;
+  border-top: 5px solid #009ddb;
+  border-radius: 10px;
+}
+
+.tag {
+  background-color: #fff;
+  color: black;
+  padding: 5px 10px;
+  border-left: 2px solid red;
+}
