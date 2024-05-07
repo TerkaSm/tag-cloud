@@ -3,12 +3,9 @@ import './App.css'
 import { TagCloud } from './components/TagCloud/TagCloud'
 import Form from './components/Form/Form'
 
-interface Tags {
-  [index: number]: string;
-}
 
 function App(): JSX.Element {
-  const [tags, setTags] = useState<Tags[]>(['Digital Art', 'Replacement', 'Aria', 'Fitness', 'Wireless', 'Hike', 'Active', 'Medical', 'Free', 'Setup', 'Goal', 'Black'])
+  const [tags, setTags] = useState<string[]>(['Digital Art', 'Replacement', 'Aria', 'Fitness', 'Wireless', 'Hike', 'Active', 'Medical', 'Free', 'Setup', 'Goal', 'Black'])
 
   const handleAddTag = (newTag: string): void => {
     setTags(prevTags => [...prevTags, newTag]);

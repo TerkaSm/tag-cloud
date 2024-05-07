@@ -3,7 +3,6 @@ import styles from './TagCloud.module.css'
 
 interface Props {
   tags: string[];
-  setTags: () => void;
 }
 
 export const TagCloud = ({tags}: Props): JSX.Element => {
